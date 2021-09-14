@@ -1,10 +1,42 @@
 /* intuitivnější box-sizing */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+ ::before,
+ ::after {
+    box-sizing: inherit;
+}
 
 body {
-	font-family: sans-serif;
+    font-family: sans-serif;
 }
+
 
 /* ---------------------------------------------------- */
 
+.kalendar {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    gap: 2px;
+}
+
+.kalendar li {
+    list-style: none;
+    border: solid grey 1px;
+    text-align: center;
+}
+
+.zahlavi {
+    background-color: rgb(230, 76, 76);
+    color: white;
+}
+
+.predchozi,
+.nasledujici {
+    background-color: rgb(185, 185, 185);
+    color: rgb(110, 110, 110);
+}
