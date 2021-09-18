@@ -19,15 +19,27 @@ body {
 
 .kalendar {
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(6, 50px);
     gap: 2px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .kalendar li {
-    list-style: none;
-    border: solid grey 1px;
-    text-align: center;
+    border: solid silver 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kalendar li button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: white;
 }
 
 .zahlavi {
@@ -37,6 +49,11 @@ body {
 
 .predchozi,
 .nasledujici {
-    background-color: rgb(185, 185, 185);
+    background-color: lightgray;
     color: rgb(110, 110, 110);
+}
+
+.kalendar li button:hover,
+.kalendar li button:focus {
+    background-color: rgb(241, 241, 241);
 }
